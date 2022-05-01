@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\doc\README.md" />
+    <None Include=".\src\crypto\README.md" />
+    <None Include=".\src\res\node_etw_provider.man" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\src\api\async_resource.cc" />
+    <ClCompile Include=".\src\api\callback.cc" />
+    <ClCompile Include=".\src\api\embed_helpers.cc" />
+    <ClCompile Include=".\src\api\encoding.cc" />
+    <ClCompile Include=".\src\api\environment.cc" />
+    <ClCompile Include=".\src\api\exceptions.cc" />
+    <ClCompile Include=".\src\api\hooks.cc" />
+    <ClCompile Include=".\src\api\utils.cc" />
+    <ClCompile Include=".\src\async_wrap.cc" />
+    <ClCompile Include=".\src\cares_wrap.cc" />
+    <ClCompile Include=".\src\connection_wrap.cc" />
+    <ClCompile Include=".\src\connect_wrap.cc" />
+    <ClCompile Include=".\src\crypto\crypto_aes.cc" />
+    <ClCompile Include=".\src\crypto\crypto_bio.cc" />
+    <ClCompile Include=".\src\crypto\crypto_cipher.cc" />
+    <ClCompile Include=".\src\crypto\crypto_clienthello.cc" />
+    <ClCompile Include=".\src\crypto\crypto_common.cc" />
+    <ClCompile Include=".\src\crypto\crypto_context.cc" />
+    <ClCompile Include=".\src\crypto\crypto_dh.cc" />
+    <ClCompile Include=".\src\crypto\crypto_dsa.cc" />
+    <ClCompile Include=".\src\crypto\crypto_ec.cc" />
+    <ClCompile Include=".\src\crypto\crypto_hash.cc" />
+    <ClCompile Include=".\src\crypto\crypto_hkdf.cc" />
+    <ClCompile Include=".\src\crypto\crypto_hmac.cc" />
+    <ClCompile Include=".\src\crypto\crypto_keygen.cc" />
+    <ClCompile Include=".\src\crypto\crypto_keys.cc" />
+    <ClCompile Include=".\src\crypto\crypto_pbkdf2.cc" />
+    <ClCompile Include=".\src\crypto\crypto_random.cc" />
+    <ClCompile Include=".\src\crypto\crypto_rsa.cc" />
+    <ClCompile Include=".\src\crypto\crypto_scrypt.cc" />
+    <ClCompile Include=".\src\crypto\crypto_sig.cc" />
+    <ClCompile Include=".\src\crypto\crypto_spkac.cc" />
+    <ClCompile Include=".\src\crypto\crypto_timing.cc" />
+    <ClCompile Include=".\src\crypto\crypto_tls.cc" />
+    <ClCompile Include=".\src\crypto\crypto_util.cc" />
+    <ClCompile Include=".\src\crypto\crypto_x509.cc" />
+    <ClCompile Include=".\src\debug_utils.cc" />
+    <ClCompile Include=".\src\env.cc" />
+    <ClCompile Include=".\src\fs_event_wrap.cc" />
+    <ClCompile Include=".\src\handle_wrap.cc" />
+    <ClCompile Include=".\src\heap_utils.cc" />
+    <ClCompile Include=".\src\histogram.cc" />
+    <ClCompile Include=".\src\inspector_agent.cc" />
+    <ClCompile Include=".\src\inspector_io.cc" />
+    <ClCompile Include=".\src\inspector_js_api.cc" />
+    <ClCompile Include=".\src\inspector_profiler.cc" />
+    <ClCompile Include=".\src\inspector_socket.cc" />
+    <ClCompile Include=".\src\inspector_socket_server.cc" />
+    <ClCompile Include=".\src\json_utils.cc" />
+    <ClCompile Include=".\src\js_native_api_v8.cc" />
+    <ClCompile Include=".\src\js_stream.cc" />
+    <ClCompile Include=".\src\js_udp_wrap.cc" />
+    <ClCompile Include=".\src\module_wrap.cc" />
+    <ClCompile Include=".\src\node.cc" />
+    <ClCompile Include=".\src\node_api.cc" />
+    <ClCompile Include=".\src\node_binding.cc" />
+    <ClCompile Include=".\src\node_blob.cc" />
+    <ClCompile Include=".\src\node_buffer.cc" />
+    <ClCompile Include=".\src\node_code_cache_stub.cc" />
+    <ClCompile Include=".\src\node_config.cc" />
+    <ClCompile Include=".\src\node_constants.cc" />
+    <ClCompile Include=".\src\node_contextify.cc" />
+    <ClCompile Include=".\src\node_credentials.cc" />
+    <ClCompile Include=".\src\node_crypto.cc" />
+    <ClCompile Include=".\src\node_dir.cc" />
+    <ClCompile Include=".\src\node_dtrace.cc" />
+    <ClCompile Include=".\src\node_env_var.cc" />
+    <ClCompile Include=".\src\node_errors.cc" />
+    <ClCompile Include=".\src\node_external_reference.cc" />
+    <ClCompile Include=".\src\node_file.cc" />
+    <ClCompile Include=".\src\node_http2.cc" />
+    <ClCompile Include=".\src\node_http_parser.cc" />
+    <ClCompile Include=".\src\node_i18n.cc" />
+    <ClCompile Include=".\src\node_main.cc" />
+    <ClCompile Include=".\src\node_main_instance.cc" />
+    <ClCompile Include=".\src\node_messaging.cc" />
+    <ClCompile Include=".\src\node_metadata.cc" />
+    <ClCompile Include=".\src\node_native_module.cc" />
+    <ClCompile Include=".\src\node_native_module_env.cc" />
+    <ClCompile Include=".\src\node_options.cc" />
+    <ClCompile Include=".\src\node_os.cc" />
+    <ClCompile Include=".\src\node_perf.cc" />
+    <ClCompile Include=".\src\node_platform.cc" />
+    <ClCompile Include=".\src\node_postmortem_metadata.cc" />
+    <ClCompile Include=".\src\node_process_events.cc" />
+    <ClCompile Include=".\src\node_process_methods.cc" />
+    <ClCompile Include=".\src\node_process_object.cc" />
+    <ClCompile Include=".\src\node_report.cc" />
+    <ClCompile Include=".\src\node_report_module.cc" />
+    <ClCompile Include=".\src\node_report_utils.cc" />
+    <ClCompile Include=".\src\node_serdes.cc" />
+    <ClCompile Include=".\src\node_snapshotable.cc" />
+    <ClCompile Include=".\src\node_snapshot_stub.cc" />
+    <ClCompile Include=".\src\node_sockaddr.cc" />
+    <ClCompile Include=".\src\node_stat_watcher.cc" />
+    <ClCompile Include=".\src\node_symbols.cc" />
+    <ClCompile Include=".\src\node_task_queue.cc" />
+    <ClCompile Include=".\src\node_trace_events.cc" />
+    <ClCompile Include=".\src\node_types.cc" />
+    <ClCompile Include=".\src\node_url.cc" />
+    <ClCompile Include=".\src\node_url_tables.cc" />
+    <ClCompile Include=".\src\node_util.cc" />
+    <ClCompile Include=".\src\node_v8.cc" />
+    <ClCompile Include=".\src\node_wasi.cc" />
+    <ClCompile Include=".\src\node_wasm_web_api.cc" />
+    <ClCompile Include=".\src\node_watchdog.cc" />
+    <ClCompile Include=".\src\node_win32_etw_provider.cc" />
+    <ClCompile Include=".\src\node_worker.cc" />
+    <ClCompile Include=".\src\node_zlib.cc" />
+    <ClCompile Include=".\src\pipe_wrap.cc" />
+    <ClCompile Include=".\src\process_wrap.cc" />
+    <ClCompile Include=".\src\signal_wrap.cc" />
+    <ClCompile Include=".\src\spawn_sync.cc" />
+    <ClCompile Include=".\src\stream_base.cc" />
+    <ClCompile Include=".\src\stream_pipe.cc" />
+    <ClCompile Include=".\src\stream_wrap.cc" />
+    <ClCompile Include=".\src\string_bytes.cc" />
+    <ClCompile Include=".\src\string_decoder.cc" />
+    <ClCompile Include=".\src\tcp_wrap.cc" />
+    <ClCompile Include=".\src\timers.cc" />
+    <ClCompile Include=".\src\timer_wrap.cc" />
+    <ClCompile Include=".\src\tty_wrap.cc" />
+    <ClCompile Include=".\src\udp_wrap.cc" />
+    <ClCompile Include=".\src\util.cc" />
+    <ClCompile Include=".\src\uv.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\src\aliased_buffer.h" />
+    <ClInclude Include=".\src\aliased_struct-inl.h" />
+    <ClInclude Include=".\src\aliased_struct.h" />
+    <ClInclude Include=".\src\allocated_buffer-inl.h" />
+    <ClInclude Include=".\src\allocated_buffer.h" />
+    <ClInclude Include=".\src\async_wrap-inl.h" />
+    <ClInclude Include=".\src\async_wrap.h" />
+    <ClInclude Include=".\src\base64-inl.h" />
+    <ClInclude Include=".\src\base64.h" />
+    <ClInclude Include=".\src\base_object-inl.h" />
+    <ClInclude Include=".\src\base_object.h" />
+    <ClInclude Include=".\src\callback_queue-inl.h" />
+    <ClInclude Include=".\src\callback_queue.h" />
+    <ClInclude Include=".\src\cares_wrap.h" />
+    <ClInclude Include=".\src\connection_wrap.h" />
+    <ClInclude Include=".\src\connect_wrap.h" />
+    <ClInclude Include=".\src\crypto\crypto_aes.h" />
+    <ClInclude Include=".\src\crypto\crypto_bio.h" />
+    <ClInclude Include=".\src\crypto\crypto_cipher.h" />
+    <ClInclude Include=".\src\crypto\crypto_clienthello-inl.h" />
+    <ClInclude Include=".\src\crypto\crypto_clienthello.h" />
+    <ClInclude Include=".\src\crypto\crypto_common.h" />
+    <ClInclude Include=".\src\crypto\crypto_context.h" />
+    <ClInclude Include=".\src\crypto\crypto_dh.h" />
+    <ClInclude Include=".\src\crypto\crypto_dsa.h" />
+    <ClInclude Include=".\src\crypto\crypto_ec.h" />
+    <ClInclude Include=".\src\crypto\crypto_groups.h" />
+    <ClInclude Include=".\src\crypto\crypto_hash.h" />
+    <ClInclude Include=".\src\crypto\crypto_hkdf.h" />
+    <ClInclude Include=".\src\crypto\crypto_hmac.h" />
+    <ClInclude Include=".\src\crypto\crypto_keygen.h" />
+    <ClInclude Include=".\src\crypto\crypto_keys.h" />
+    <ClInclude Include=".\src\crypto\crypto_pbkdf2.h" />
+    <ClInclude Include=".\src\crypto\crypto_random.h" />
+    <ClInclude Include=".\src\crypto\crypto_rsa.h" />
+    <ClInclude Include=".\src\crypto\crypto_scrypt.h" />
+    <ClInclude Include=".\src\crypto\crypto_sig.h" />
+    <ClInclude Include=".\src\crypto\crypto_spkac.h" />
+    <ClInclude Include=".\src\crypto\crypto_timing.h" />
+    <ClInclude Include=".\src\crypto\crypto_tls.h" />
+    <ClInclude Include=".\src\crypto\crypto_util.h" />
+    <ClInclude Include=".\src\crypto\crypto_x509.h" />
+    <ClInclude Include=".\src\debug_utils-inl.h" />
+    <ClInclude Include=".\src\debug_utils.h" />
+    <ClInclude Include=".\src\diagnosticfilename-inl.h" />
+    <ClInclude Include=".\src\env-inl.h" />
+    <ClInclude Include=".\src\env.h" />
+    <ClInclude Include=".\src\handle_wrap.h" />
+    <ClInclude Include=".\src\histogram-inl.h" />
+    <ClInclude Include=".\src\histogram.h" />
+    <ClInclude Include=".\src\inspector_agent.h" />
+    <ClInclude Include=".\src\inspector_io.h" />
+    <ClInclude Include=".\src\inspector_profiler.h" />
+    <ClInclude Include=".\src\inspector_socket.h" />
+    <ClInclude Include=".\src\inspector_socket_server.h" />
+    <ClInclude Include=".\src\json_utils.h" />
+    <ClInclude Include=".\src\js_native_api.h" />
+    <ClInclude Include=".\src\js_native_api_types.h" />
+    <ClInclude Include=".\src\js_native_api_v8.h" />
+    <ClInclude Include=".\src\js_native_api_v8_internals.h" />
+    <ClInclude Include=".\src\js_stream.h" />
+    <ClInclude Include=".\src\memory_tracker-inl.h" />
+    <ClInclude Include=".\src\memory_tracker.h" />
+    <ClInclude Include=".\src\module_wrap.h" />
+    <ClInclude Include=".\src\node.h" />
+    <ClInclude Include=".\src\node_api.h" />
+    <ClInclude Include=".\src\node_api_internals.h" />
+    <ClInclude Include=".\src\node_api_types.h" />
+    <ClInclude Include=".\src\node_binding.h" />
+    <ClInclude Include=".\src\node_blob.h" />
+    <ClInclude Include=".\src\node_bob-inl.h" />
+    <ClInclude Include=".\src\node_bob.h" />
+    <ClInclude Include=".\src\node_buffer.h" />
+    <ClInclude Include=".\src\node_constants.h" />
+    <ClInclude Include=".\src\node_contextify.h" />
+    <ClInclude Include=".\src\node_context_data.h" />
+    <ClInclude Include=".\src\node_crypto.h" />
+    <ClInclude Include=".\src\node_dir.h" />
+    <ClInclude Include=".\src\node_dtrace.h" />
+    <ClInclude Include=".\src\node_errors.h" />
+    <ClInclude Include=".\src\node_external_reference.h" />
+    <ClInclude Include=".\src\node_file-inl.h" />
+    <ClInclude Include=".\src\node_file.h" />
+    <ClInclude Include=".\src\node_http2.h" />
+    <ClInclude Include=".\src\node_http2_state.h" />
+    <ClInclude Include=".\src\node_http_common-inl.h" />
+    <ClInclude Include=".\src\node_http_common.h" />
+    <ClInclude Include=".\src\node_i18n.h" />
+    <ClInclude Include=".\src\node_internals.h" />
+    <ClInclude Include=".\src\node_main_instance.h" />
+    <ClInclude Include=".\src\node_mem-inl.h" />
+    <ClInclude Include=".\src\node_mem.h" />
+    <ClInclude Include=".\src\node_messaging.h" />
+    <ClInclude Include=".\src\node_metadata.h" />
+    <ClInclude Include=".\src\node_mutex.h" />
+    <ClInclude Include=".\src\node_native_module.h" />
+    <ClInclude Include=".\src\node_native_module_env.h" />
+    <ClInclude Include=".\src\node_object_wrap.h" />
+    <ClInclude Include=".\src\node_options-inl.h" />
+    <ClInclude Include=".\src\node_options.h" />
+    <ClInclude Include=".\src\node_perf.h" />
+    <ClInclude Include=".\src\node_perf_common.h" />
+    <ClInclude Include=".\src\node_platform.h" />
+    <ClInclude Include=".\src\node_process-inl.h" />
+    <ClInclude Include=".\src\node_process.h" />
+    <ClInclude Include=".\src\node_report.h" />
+    <ClInclude Include=".\src\node_revert.h" />
+    <ClInclude Include=".\src\node_root_certs.h" />
+    <ClInclude Include=".\src\node_snapshotable.h" />
+    <ClInclude Include=".\src\node_snapshot_builder.h" />
+    <ClInclude Include=".\src\node_sockaddr-inl.h" />
+    <ClInclude Include=".\src\node_sockaddr.h" />
+    <ClInclude Include=".\src\node_stat_watcher.h" />
+    <ClInclude Include=".\src\node_union_bytes.h" />
+    <ClInclude Include=".\src\node_url.h" />
+    <ClInclude Include=".\src\node_v8.h" />
+    <ClInclude Include=".\src\node_v8_platform-inl.h" />
+    <ClInclude Include=".\src\node_version.h" />
+    <ClInclude Include=".\src\node_wasi.h" />
+    <ClInclude Include=".\src\node_wasm_web_api.h" />
+    <ClInclude Include=".\src\node_watchdog.h" />
+    <ClInclude Include=".\src\node_win32_etw_provider-inl.h" />
+    <ClInclude Include=".\src\node_win32_etw_provider.h" />
+    <ClInclude Include=".\src\node_worker.h" />
+    <ClInclude Include=".\src\pipe_wrap.h" />
+    <ClInclude Include=".\src\req_wrap-inl.h" />
+    <ClInclude Include=".\src\req_wrap.h" />
+    <ClInclude Include=".\src\spawn_sync.h" />
+    <ClInclude Include=".\src\stream_base-inl.h" />
+    <ClInclude Include=".\src\stream_base.h" />
+    <ClInclude Include=".\src\stream_pipe.h" />
+    <ClInclude Include=".\src\stream_wrap.h" />
+    <ClInclude Include=".\src\string_bytes.h" />
+    <ClInclude Include=".\src\string_decoder-inl.h" />
+    <ClInclude Include=".\src\string_decoder.h" />
+    <ClInclude Include=".\src\string_search.h" />
+    <ClInclude Include=".\src\tcp_wrap.h" />
+    <ClInclude Include=".\src\threadpoolwork-inl.h" />
+    <ClInclude Include=".\src\timer_wrap-inl.h" />
+    <ClInclude Include=".\src\timer_wrap.h" />
+    <ClInclude Include=".\src\tty_wrap.h" />
+    <ClInclude Include=".\src\udp_wrap.h" />
+    <ClInclude Include=".\src\util-inl.h" />
+    <ClInclude Include=".\src\util.h" />
+    <ClInclude Include=".\src\v8abbr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include=".\src\res\node.exe.extra.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include=".\src\res\node.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\src\res\node.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3fc046a9-3288-4e06-b540-95e353388cb9}</ProjectGuid>
+    <RootNamespace>node</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

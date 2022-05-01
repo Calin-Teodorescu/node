@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="%2a Info">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="%2a%2a Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="%2a%2a Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="%2a%2a%2a Resource Files">
+      <UniqueIdentifier>{8f00d02d-031c-42b5-a16a-eefe14a1de96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api">
+      <UniqueIdentifier>{d172a991-b4fb-4d42-9355-6d6001aa29de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{64a9b53f-2a23-49ec-a1f5-e62827ae0220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inspector">
+      <UniqueIdentifier>{ab675e3a-dfc4-490f-8cb9-bac7ea7cd503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="large_pages">
+      <UniqueIdentifier>{321ae784-c46d-427a-975a-2ddd69e43201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tracing">
+      <UniqueIdentifier>{218cdbd8-5d15-4fca-b903-94a52f5fe102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto\Include Files">
+      <UniqueIdentifier>{96e7537a-62db-426f-ae09-ac7134d140dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto\%2a Info">
+      <UniqueIdentifier>{96d0111a-6c3d-48c5-ae9b-f917b1549358}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\doc\README.md">
+      <Filter>%2a Info</Filter>
+    </None>
+    <None Include=".\src\res\node_etw_provider.man">
+      <Filter>%2a%2a%2a Resource Files</Filter>
+    </None>
+    <None Include=".\src\crypto\README.md">
+      <Filter>crypto\%2a Info</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include=".\src\async_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\cares_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\connect_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\connection_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\debug_utils.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\env.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\fs_event_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\handle_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\heap_utils.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\histogram.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\inspector_agent.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\inspector_io.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\inspector_js_api.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\inspector_profiler.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\inspector_socket.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\inspector_socket_server.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\js_native_api_v8.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\js_stream.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\js_udp_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\json_utils.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\module_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_api.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_binding.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_blob.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_buffer.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_code_cache_stub.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_config.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_constants.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_contextify.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_credentials.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_crypto.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_dir.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_dtrace.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_env_var.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_errors.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_external_reference.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_file.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_http_parser.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_http2.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_i18n.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_main.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_main_instance.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_messaging.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_metadata.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_native_module.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_native_module_env.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_options.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_os.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_perf.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_platform.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_postmortem_metadata.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_process_events.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_process_methods.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_process_object.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_report.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_report_module.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_report_utils.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_serdes.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_snapshot_stub.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_snapshotable.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_sockaddr.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_stat_watcher.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_symbols.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_task_queue.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_trace_events.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_types.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_url.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_url_tables.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_util.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_v8.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_wasi.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_wasm_web_api.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_watchdog.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_win32_etw_provider.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_worker.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\node_zlib.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\pipe_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\process_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\signal_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\spawn_sync.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\stream_base.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\stream_pipe.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\stream_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\string_bytes.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\string_decoder.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\tcp_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\timer_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\timers.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\tty_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\udp_wrap.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\util.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\uv.cc">
+      <Filter>%2a%2a Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\async_resource.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\callback.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\embed_helpers.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\encoding.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\environment.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\exceptions.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\hooks.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\api\utils.cc">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_aes.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_bio.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_cipher.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_clienthello.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_common.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_context.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_dh.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_dsa.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_ec.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_hash.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_hkdf.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_hmac.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_keygen.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_keys.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_pbkdf2.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_random.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_rsa.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_scrypt.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_sig.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_spkac.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_timing.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_tls.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_util.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include=".\src\crypto\crypto_x509.cc">
+      <Filter>crypto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\src\aliased_buffer.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\aliased_struct.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\aliased_struct-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\allocated_buffer.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\allocated_buffer-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\async_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\async_wrap-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\base_object.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\base_object-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\base64.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\base64-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\callback_queue.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\callback_queue-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\cares_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\connect_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\connection_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\debug_utils.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\debug_utils-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\diagnosticfilename-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\env.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\env-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\handle_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\histogram.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\histogram-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\inspector_agent.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\inspector_io.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\inspector_profiler.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\inspector_socket.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\inspector_socket_server.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\js_native_api.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\js_native_api_types.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\js_native_api_v8.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\js_native_api_v8_internals.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\js_stream.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\json_utils.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\memory_tracker.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\memory_tracker-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\module_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_api.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_api_internals.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_api_types.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_binding.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_blob.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_bob.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_bob-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_buffer.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_constants.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_context_data.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_contextify.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_crypto.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_dir.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_dtrace.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_errors.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_external_reference.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_file.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_file-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_http_common.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_http_common-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_http2.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_http2_state.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_i18n.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_internals.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_main_instance.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_mem.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_mem-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_messaging.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_metadata.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_mutex.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_native_module.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_native_module_env.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_object_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_options.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_options-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_perf.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_perf_common.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_platform.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_process.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_process-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_report.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_revert.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_root_certs.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_snapshot_builder.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_snapshotable.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_sockaddr.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_sockaddr-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_stat_watcher.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_union_bytes.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_url.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_v8.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_v8_platform-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_version.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_wasi.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_wasm_web_api.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_watchdog.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_win32_etw_provider.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_win32_etw_provider-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\node_worker.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\pipe_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\req_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\req_wrap-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\spawn_sync.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\stream_base.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\stream_base-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\stream_pipe.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\stream_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\string_bytes.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\string_decoder.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\string_decoder-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\string_search.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\tcp_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\threadpoolwork-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\timer_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\timer_wrap-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\tty_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\udp_wrap.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\util.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\util-inl.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\v8abbr.h">
+      <Filter>%2a%2a Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_aes.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_bio.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_cipher.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_clienthello.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_clienthello-inl.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_common.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_context.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_dh.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_dsa.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_ec.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_groups.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_hash.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_hkdf.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_hmac.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_keygen.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_keys.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_pbkdf2.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_random.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_rsa.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_scrypt.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_sig.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_spkac.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_timing.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_tls.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_util.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include=".\src\crypto\crypto_x509.h">
+      <Filter>crypto\Include Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include=".\src\res\node.exe.extra.manifest">
+      <Filter>%2a%2a%2a Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include=".\src\res\node.ico">
+      <Filter>%2a%2a%2a Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\src\res\node.rc">
+      <Filter>%2a%2a%2a Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
